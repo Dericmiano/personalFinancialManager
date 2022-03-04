@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="chip_style">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">54dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginEnd">84dp</item>
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
+
+    <style name="textview_style">
+        <item name="android:layout_width">176dp</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+</resources>

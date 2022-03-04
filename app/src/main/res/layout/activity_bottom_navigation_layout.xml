@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F8585"
+    android:textAlignment="center"
+    tools:context=".Bottom_Navigation_layout"
+    app:behavior_peekHeight="@dimen/dimen_32"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+<!--    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">-->
+
+
+    <EditText
+        android:id="@+id/bot_others_textentry"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="@string/cash"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bot_entertainment_textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/chip12"
+        app:layout_constraintTop_toBottomOf="@+id/bot_airtime_textentry" />
+
+    <EditText
+        android:id="@+id/bot_entertainment_textentry"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/cash"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/chip13"
+        app:layout_constraintTop_toBottomOf="@+id/bot_others_textentry" />
+
+    <EditText
+        android:id="@+id/bot_offering_textentry"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="@string/cash"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bot_airtime_textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/chip9"
+        app:layout_constraintTop_toBottomOf="@+id/bot_gf_textentry" />
+
+    <EditText
+        android:id="@+id/bot_airtime_textentry"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="@string/cash"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bot_others_textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chip11"
+        app:layout_constraintTop_toBottomOf="@+id/bot_offering_textentry" />
+
+    <EditText
+        android:id="@+id/bot_gf_textentry"
+        style="@style/textview_style"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/cash"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bot_offering_textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toEndOf="@+id/chip8"
+        app:layout_constraintTop_toBottomOf="@+id/bot_food_textentry" />
+
+    <EditText
+        android:id="@+id/bot_food_textentry"
+        style="@style/textview_style"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="@string/cash"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bot_gf_textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/chip10"
+        app:layout_constraintTop_toBottomOf="@+id/bot_fee_textentry" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip13"
+        style="@style/chip_style"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/Entainment_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip12" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip12"
+        style="@style/chip_style"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/other_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip11" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip11"
+        style="@style/chip_style"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/aitime_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip9" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip9"
+        style="@style/chip_style"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/Charity_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip8" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip8"
+        style="@style/chip_style"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/friend_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip10" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip10"
+        style="@style/chip_style"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/fee_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip7" />
+
+    <ImageButton
+        android:id="@+id/bot_calendar_image_button"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#BDA4A4"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <TextView
+        android:id="@+id/bot_calendar_textview"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:hint="@string/date_hint"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bot_calendar_image_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="167dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/day_target"
+        android:textColor="#1432EC"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot_calendar_textview" />
+
+    <EditText
+        android:id="@+id/bot_target_textentry"
+        android:layout_width="188dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:hint="@string/days_target_hint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#DD3D3D"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/bot_calendar_textview" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/spending_text"
+        android:textColor="#1432EC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="55dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/cash_text"
+        android:textColor="#1432EC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/bot_target_textentry"
+        app:srcCompat="@drawable/ic_baseline_attach_money_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#1432EC"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/ic_baseline_payments_24" />
+
+    <EditText
+        android:id="@+id/bot_fee_textentry"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="@string/cash"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bot_food_textentry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/chip7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip7"
+        style="@style/chip_style"
+        android:layout_width="163dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:background="#D3C8C8"
+        android:fontFamily="@font/almendra_sc"
+        android:text="@string/food_text"
+        android:textAlignment="center"
+        android:textColor="#1432EC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/bot_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="155dp"
+        android:bufferType="normal"
+        android:text="save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bot_end_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot_entertainment_textentry" />
+
+    <Button
+        android:id="@+id/bot_end_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="155dp"
+        android:text="End"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bot_entertainment_textentry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

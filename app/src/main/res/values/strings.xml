@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Personal Financial Manager</string>
+    <string name="date_text">Date:</string>
+    <string name="day_target_text">Day\'s target:</string>
+    <string name="cash_hint">300 ksh</string>
+    <string name="usage_text">Usage:</string>
+    <string name="save_text">Saved :</string>
+    <string name="usage_hint">75%</string>
+    <string name="save_hint">25%</string>
+    <string name="usage_list_text">-analysis spending\'s-</string>
+    <string name="top_spending_one_hint">Fees</string>
+    <string name="top_spending_two_hint">Food</string>
+    <string name="value_spending_two_hint">50</string>
+    <string name="value_spending_one_hint">45</string>
+    <string name="date_hint">Today is Date?</string>
+    <string name="day_target">Today Target  :</string>
+    <string name="days_target_hint">Target e.g 300</string>
+    <string name="spending_text">Spending</string>
+    <string name="cash_text">Cash</string>
+    <string name="food_text">Food</string>
+    <string name="End_day_text">End your day</string>
+    <string name="fee_text">Fees</string>
+    <string name="friend_text">G/B friend</string>
+    <string name="Charity_text">"Offering "</string>
+    <string name="aitime_text">Airtime</string>
+    <string name="other_text">Others B/N</string>
+    <string name="Entainment_text">Entertainment</string>
+    <string name="cash">0 ksh</string>
+    <string name="chip_text_add">Add spending</string>
+    <string name="chip_viewspending">View spending</string>
+    <string name="max_text">Max Spend :</string>
+    <string name="min_text">Min Spend :</string>
+    <string name="date">Date</string>
+    <string name="target">target</string>
+    <string name="food">food</string>
+    <string name="empty_field">empty spends</string>
+</resources>
